@@ -12,7 +12,7 @@ public class CCuenta {
     private String nombre;
     private String cuenta;
     private double saldo;
-    private double tipoInterés;
+    private double tipoInteres;
 
 
     public CCuenta()
@@ -24,6 +24,7 @@ public class CCuenta {
         nombre =nom;
         cuenta=cue;
         saldo=sal;
+        tipoInteres = tipo;
     }
 
     public void asignarNombre(String nom)
@@ -65,7 +66,11 @@ public class CCuenta {
         return cuenta;
     }
 
-
+    public void asignarCuenta(String nombre) 
+    {
+        this.cuenta = nombre;
+    }
+    
     public String getNombre() {
         return nombre;
     }
@@ -76,12 +81,12 @@ public class CCuenta {
     }
 
 
-    public double getTipoInterés() {
-        return tipoInterés;
+    public double getTipoInteres() {
+        return tipoInteres;
     }
 
 
-    public void setTipoInterés(double tipoInterés) {
-        this.tipoInterés = tipoInterés;
+    public void setTipoInteres(double tipoInterés) {
+        this.tipoInteres = tipoInterés;
     }
 }
